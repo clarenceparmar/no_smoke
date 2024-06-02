@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No Smoking Calendar</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <div id="form-container">
+        <h1>No Smoke Dairy</h1>
+        <form id="entry-form">
+            <div>
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div>
+                <label for="time">Time:</label>
+                <input type="time" id="time" name="time" required>
+            </div>
+            <div>
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location" required>
+            </div>
+            <div>
+                <label for="cost">Cost:</label>
+                <input type="number" min="1" id="cost" name="cost" required>
+            </div>
+            <div>
+                <label for="status">Status:</label>
+                <input type="radio" id="smoke" name="status" value="smoke" required>
+                <label for="smoke">Smoke</label>
+                <input type="radio" id="no-smoke" name="status" value="no-smoke" required>
+                <label for="no-smoke">No Smoke</label>
+            </div>
+            <div>
+                <label for="note">Note:</label>
+                <textarea id="note" name="note" rows="1" cols="50" required></textarea>
+            </div>
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
